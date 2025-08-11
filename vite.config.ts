@@ -6,6 +6,9 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
+    build: {
+      outDir: 'docs'
+    },
     plugins: [react()],
     base: '/Triveni-Classes/',
     define: {
